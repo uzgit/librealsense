@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.12.0)
 
-cmake_policy(SET CMP0074 NEW)
-
 project(RealsenseMatlabWrappers)
 
 # if several versions Matlab deployed, use the lowest one
