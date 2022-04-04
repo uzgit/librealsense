@@ -6,7 +6,7 @@ project(RealsenseMatlabWrappers)
 
 # if several versions Matlab deployed, use the lowest one
 SET(CMAKE_FIND_PACKAGE_SORT_ORDER NATURAL)
-SET(CMAKE_FIND_PACKAGE_SORT_DIRECTION INC)
+SET(CMAKE_FIND_PACKAGE_SORT_DIRECTION ASC)
 find_package(Matlab COMPONENTS MX_LIBRARY MAT_LIBRARY REQUIRED)
 set(DEPENDENCIES realsense2 ${Matlab_MAT_LIBRARY})
 # Workaround for https://github.com/IntelRealSense/librealsense/pull/3611/files CMAKE_DEBUG_SUFFIX
