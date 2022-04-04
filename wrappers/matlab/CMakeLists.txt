@@ -4,7 +4,7 @@ cmake_policy(SET CMP0074 NEW)
 
 project(RealsenseMatlabWrappers)
 
-find_package(Matlab 9.3 COMPONENTS MX_LIBRARY MAT_LIBRARY REQUIRED)
+find_package(Matlab 9.3...9.5,9.6 COMPONENTS MX_LIBRARY MAT_LIBRARY REQUIRED)
 set(DEPENDENCIES realsense2 ${Matlab_MAT_LIBRARY})
 # Workaround for https://github.com/IntelRealSense/librealsense/pull/3611/files CMAKE_DEBUG_SUFFIX
 # With MSVC2017 the realsense2 dependency without the suffix is still added to the debug build
