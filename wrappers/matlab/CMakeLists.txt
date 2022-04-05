@@ -5,7 +5,7 @@ project(RealsenseMatlabWrappers)
 # if several versions Matlab deployed, use the lowest one
 SET(CMAKE_FIND_PACKAGE_SORT_ORDER NATURAL)
 SET(CMAKE_FIND_PACKAGE_SORT_DIRECTION ASC)
-find_package(Matlab 9.3 EXACT COMPONENTS MX_LIBRARY MAT_LIBRARY REQUIRED)
+find_package(Matlab 9.3 EXACT PATHS "C:\Program Files\MATLAB\R2017b\bin\win64" COMPONENTS MX_LIBRARY MAT_LIBRARY REQUIRED)
 set(DEPENDENCIES realsense2 ${Matlab_MAT_LIBRARY})
 # Workaround for https://github.com/IntelRealSense/librealsense/pull/3611/files CMAKE_DEBUG_SUFFIX
 # With MSVC2017 the realsense2 dependency without the suffix is still added to the debug build
