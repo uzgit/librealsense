@@ -8,11 +8,15 @@
 // and taking advantage of depth data
 int main(int argc, char * argv[]) try
 {
+    std::cout << "Hello! Trying to connect to the camera..." << std::endl;
+
     // Create a Pipeline - this serves as a top-level API for streaming and processing frames
     rs2::pipeline p;
 
     // Configure and start the pipeline
     p.start();
+
+    std::cout << "starting the pipeline..." << std::endl;
 
     while (true)
     {

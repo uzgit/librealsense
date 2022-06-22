@@ -107,3 +107,4 @@ if(IMPORT_DEPTH_CAM_FW)
 endif()
 
 include(CMake/embedd_udev_rules.cmake)
+set(CMAKE_CXX_LINK_FLAGS "${CMAKE_CXX_LINK_FLAGS} -latomic")
